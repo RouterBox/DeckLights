@@ -1,7 +1,7 @@
 ws2812.init()
 buffer = ws2812.newBuffer(400, 3)
 --buffer:fill(64, 64, 64)
-for lights = 1, 91 do 
+for lights = 1, 400 do 
     --GRB
     if(lights % 10 == 0)then
         buffer:set(lights, 0,51,51) --v

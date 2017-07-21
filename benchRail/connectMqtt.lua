@@ -7,3 +7,6 @@ myMQTT:connect("192.168.1.100", 1883, 0, function(conn)
     dofile("subscribeMqtt.lua")
     --dofile("doLights.lua")
 end) 
+function mqttLog(msg)
+    myMQTT:publish("log/"..thingNumber, msg, 0, 0, function(client) print("sent") end)
+end 

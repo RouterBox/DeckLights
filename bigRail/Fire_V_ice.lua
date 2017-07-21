@@ -1,5 +1,5 @@
 ws2812.init()
-buffer = ws2812.newBuffer(400, 3)
+buffer = ws2812.newBuffer(300, 3)
 buffer:fill(0,51,51)
 ws2812.write(buffer)
 colorCounter = 1

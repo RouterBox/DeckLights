@@ -2,7 +2,10 @@ ws2812.init()
 buffer = ws2812.newBuffer(400, 3)
 buffer:fill(0,64,64)
 for lights = 1, 400 do
-    if(lights % 80 < 40)then
+    if(lights % 120 < 40)then
+        buffer:set(lights, 64,255,64) --v
+    end
+    if(lights % 120 > 80)then
         buffer:set(lights, 0,66,255) --v
     end
 end    
