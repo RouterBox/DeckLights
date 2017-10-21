@@ -18,29 +18,30 @@ mytimer:register(50, tmr.ALARM_AUTO, function()
    print("fireVice loop")
     
     if(colorCounter == 1)then
+        --0,20,150) 
         targetGreen = 0
-        targetRed = 250
-        targetBlue = 0
+        targetRed = 20
+        targetBlue = 150
 
         if(currentGreen < targetGreen)then
-            currentGreen =  currentGreen + 5
+            currentGreen =  currentGreen + 1
         end
         if(currentGreen > targetGreen)then
-            currentGreen = currentGreen - 5
+            currentGreen = currentGreen - 1
         end
         
         if(currentRed < targetRed)then
-            currentRed =  currentRed + 5
+            currentRed =  currentRed + 1
         end
         if(currentRed > targetRed)then
-            currentRed =  currentRed - 5
+            currentRed =  currentRed - 1
         end
 
         if(currentBlue < targetBlue)then
-            currentBlue =  currentBlue + 5
+            currentBlue =  currentBlue + 1
         end
         if(currentBlue > targetBlue)then
-            currentBlue =  currentBlue - 5
+            currentBlue =  currentBlue - 1
         end
 
         if(currentGreen == targetGreen)then
@@ -54,29 +55,29 @@ mytimer:register(50, tmr.ALARM_AUTO, function()
         
     end
     if(colorCounter == 2)then
-        targetGreen = 0
-        targetRed = 0
+        targetGreen = 30
+        targetRed = 125
         targetBlue = 0
 
         if(currentGreen < targetGreen)then
-            currentGreen =  currentGreen + 5
+            currentGreen =  currentGreen + 1
         end
         if(currentGreen > targetGreen)then
-            currentGreen = currentGreen - 5
+            currentGreen = currentGreen - 1
         end
         
         if(currentRed < targetRed)then
-            currentRed =  currentRed + 5
+            currentRed =  currentRed + 1
         end
         if(currentRed > targetRed)then
-            currentRed =  currentRed - 5
+            currentRed =  currentRed - 1
         end
 
         if(currentBlue < targetBlue)then
-            currentBlue =  currentBlue + 5
+            currentBlue =  currentBlue + 1
         end
         if(currentBlue > targetBlue)then
-            currentBlue =  currentBlue - 5
+            currentBlue =  currentBlue - 1
         end
 
         if(currentGreen == targetGreen)then
@@ -91,8 +92,8 @@ mytimer:register(50, tmr.ALARM_AUTO, function()
     end
     if(colorCounter == 3)then
         targetGreen = 0
-        targetRed = 0
-        targetBlue = 250
+        targetRed = 20
+        targetBlue = 150
         if(currentGreen < targetGreen)then
             currentGreen =  currentGreen + 1
         end
@@ -101,17 +102,17 @@ mytimer:register(50, tmr.ALARM_AUTO, function()
         end
         
         if(currentRed < targetRed)then
-            currentRed =  currentRed + 5
+            currentRed =  currentRed + 1
         end
         if(currentRed > targetRed)then
-            currentRed =  currentRed - 5
+            currentRed =  currentRed - 1
         end
 
         if(currentBlue < targetBlue)then
-            currentBlue =  currentBlue + 5
+            currentBlue =  currentBlue + 1
         end
         if(currentBlue > targetBlue)then
-            currentBlue =  currentBlue - 5
+            currentBlue =  currentBlue - 1
         end
 
         if(currentGreen == targetGreen)then
@@ -124,29 +125,29 @@ mytimer:register(50, tmr.ALARM_AUTO, function()
         buffer:fill(currentGreen, currentRed, currentBlue)
     end
     if(colorCounter == 4)then
-        targetGreen = 0
-        targetRed = 0
+        targetGreen = 30
+        targetRed = 125
         targetBlue = 0
 
         if(currentGreen < targetGreen)then
-            currentGreen =  currentGreen + 5
+            currentGreen =  currentGreen + 1
         end
         if(currentGreen > targetGreen)then
-            currentGreen = currentGreen - 5
+            currentGreen = currentGreen - 1
         end
         
         if(currentRed < targetRed)then
-            currentRed =  currentRed + 5
+            currentRed =  currentRed + 1
         end
         if(currentRed > targetRed)then
-            currentRed =  currentRed - 5
+            currentRed =  currentRed - 1
         end
 
         if(currentBlue < targetBlue)then
-            currentBlue =  currentBlue + 5
+            currentBlue =  currentBlue + 1
         end
         if(currentBlue > targetBlue)then
-            currentBlue =  currentBlue - 5
+            currentBlue =  currentBlue - 1
         end
 
         if(currentGreen == targetGreen)then

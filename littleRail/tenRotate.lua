@@ -35,11 +35,12 @@ for lights = 82, 91 do
     buffer:set(lights, 255,255,255) --r
 end
 
-ws2812.write(buffer)
+ws2812.write(buffer) 
 mytimer = tmr.create()
 mytimer:register(80, tmr.ALARM_AUTO, function()
-    print("tenRotate loop")
+    print("tenRotateLoop")
    buffer:shift(1, ws2812.SHIFT_CIRCULAR)
    ws2812.write(buffer)
 end) 
 mytimer:start()
+
